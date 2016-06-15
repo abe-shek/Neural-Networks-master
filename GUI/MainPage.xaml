@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="GUI.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-822,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="473*"/>
+            <ColumnDefinition Width="126*"/>
+            <ColumnDefinition Width="452*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlockI1w1" HorizontalAlignment="Left" Margin="238,54,0,0" TextWrapping="Wrap" Text="1Weight 1&#x9;&#x9;" VerticalAlignment="Top" Width="69" Height="20"/>
+        <TextBlock x:Name="textBlockI1w2" HorizontalAlignment="Left" Margin="238,102,0,0" TextWrapping="Wrap" Text="1Weight 2&#x9;&#x9;" VerticalAlignment="Top" Width="67" Height="20"/>
+        <TextBlock x:Name="textBlockI1w3" HorizontalAlignment="Left" Margin="237,144,0,0" TextWrapping="Wrap" Text="1Weight 3" VerticalAlignment="Top" Height="20" Width="68"/>
+        <TextBlock x:Name="textBlockI2w1" HorizontalAlignment="Left" Margin="237,258,0,0" TextWrapping="Wrap" Text="2Weight 1" VerticalAlignment="Top" Height="20" Width="68"/>
+        <TextBlock x:Name="textBlockI2w2" HorizontalAlignment="Left" Margin="237,305,0,0" TextWrapping="Wrap" Text="2Weight 2" VerticalAlignment="Top" Height="20" Width="68"/>
+        <TextBlock x:Name="textBlockI2w3" HorizontalAlignment="Left" Margin="239,371,0,0" TextWrapping="Wrap" Text="2Weight 3" VerticalAlignment="Top" Height="20" Width="68"/>
+        <TextBlock x:Name="textBlockn1w1" HorizontalAlignment="Left" Margin="622,102,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="20" Width="62"/>
+        <TextBlock x:Name="textBlockn2w1" HorizontalAlignment="Left" Margin="622,177,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="20" Width="62"/>
+        <TextBlock x:Name="textBlockn3w1" HorizontalAlignment="Left" Margin="622,246,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="20" Width="62"/>
+        <local:NeuronGUI x:Name="Neuron1" Margin="395,47,433,593"/>
+        <local:NeuronGUI x:Name="Neuron2" Margin="395,144,433,491"/>
+        <local:NeuronGUI x:Name="Neuron3" Margin="395,269,433,381"/>
+        <local:NeuronGUI x:Name="output" Margin="785,161,14,468"/>
+        <Button x:Name="buttonCalculate" Content="Calculate" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="buttonCalculate_Click" Margin="187,425,583,204" RenderTransformOrigin="0.465,0.56"/>
+        <local:NeuronGUI x:Name="input1" BorderBrush="#FFBD2626" Margin="46,73,813,574"/>
+        <local:NeuronGUI x:Name="input2" Margin="46,281,813,360"/>
+        <TextBox x:Name="textBoxInput1" HorizontalAlignment="Left" Margin="58,95,0,0" TextWrapping="Wrap" Text="Input1" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxInput2" HorizontalAlignment="Left" Margin="58,305,0,0" TextWrapping="Wrap" Text="Input2" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Neuron1TextBox" HorizontalAlignment="Left" Margin="418,86,0,0" TextWrapping="Wrap" Text="Neuron1" VerticalAlignment="Top" Height="20" Width="62"/>
+        <TextBlock x:Name="Neuron2TextBox" HorizontalAlignment="Left" Margin="418,177,0,0" TextWrapping="Wrap" Text="Neuron2" VerticalAlignment="Top" Height="20" Width="62"/>
+        <TextBlock x:Name="Neuron3TextBox" HorizontalAlignment="Left" Margin="418,288,0,0" TextWrapping="Wrap" Text="Neuron3" VerticalAlignment="Top" Height="20" Width="62"/>
+        <TextBlock x:Name="OutputTextBox" HorizontalAlignment="Left" Margin="825,197,0,0" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Height="20" Width="62"/>
+        <Button x:Name="buttonUpdate" Content="Update" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="buttonUpdate_Click" Margin="432,425,338,204" RenderTransformOrigin="0.465,0.56"/>
+
+    </Grid>
+</Page>
